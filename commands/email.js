@@ -9,17 +9,13 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function sendEmail(discord_username, email, token) {
 
-	// if (email.endsWith('@nyu.edu') == false) {
-	// 	return 'Please use your NYU email address!';
-	// }
-
-	// trim the email of white spaces just in case.
 	email = email.trim();
-
-	// Match the beginning and end of the string, n-alphabet n-number @nyu.edu
-	const regex = new RegExp('^[a-z]+[0-9]+@nyu.edu$');
+	var exp = ''
+	var exp = exp.concat('^[a-z]+[0-9]+@',process.env.DOMAIN,'$');
+	const regex = new RegExp(exp);
 	if (regex.test(email) == false) {
-		return 'Invalid email! Please use your NYU email address with the format NETID@nyu.edu';
+		var prompt = 'Invalid email! Please use your ';
+		return prompt.concat(process.env.DOMAIN," email address");
 	}
 
 	const [res, errmsg] = await sheets.addUser(discord_username, email, token);
@@ -30,7 +26,7 @@ async function sendEmail(discord_username, email, token) {
 	const msg = {
 		to: email,
 		from: process.env.SENDER,
-		subject: 'OSIRIS Lab Verification',
+		subject: 'Discord Verification',
 		text:`Your token is: ${token}`,
 		html: `Your token is: ${token}`,
 	};
