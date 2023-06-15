@@ -1,0 +1,28 @@
+{
+  "name": "andre",
+  "version": "1.0.0",
+  "description": "A bot to handle administration tasks in the Discord server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osirislab/superbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osirislab/superbot/issues"
+  },
+  "homepage": "https://github.com/osirislab/superbot#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "google-spreadsheet": "^3.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0"
+  }
+}
