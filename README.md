@@ -38,3 +38,8 @@ In order to register a command, run
 
 Linting:
 - `npx eslint --fix`
+
+# Author
+- Andre
+- Allen
+- n132
