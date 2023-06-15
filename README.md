@@ -20,6 +20,7 @@ NOTE: Using Twilio's SendGrid to send emails from your account. Free plan limits
     - `SENDER`: Sender's email address on SendGrid
     - `ROLE_NAME`: The role people would get after they pass verification
     - `SERVER_NAME`: Your server's name
+    - `DOMAIN`: The Domain of the email addresses
     
 
 ## Google spreadsheet
