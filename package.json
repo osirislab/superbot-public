@@ -1,5 +1,5 @@
 {
-  "name": "andre",
+  "name": "superbot-public",
   "version": "1.0.0",
   "description": "A bot to handle administration tasks in the Discord server",
   "main": "app.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/osirislab/superbot.git"
   },
-  "author": "",
+  "author": "Andre Allen n132",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/osirislab/superbot/issues"
@@ -24,5 +24,10 @@
   },
   "devDependencies": {
     "eslint": "^8.32.0"
-  }
+  },
+  "keywords": [
+    "discord",
+    "email",
+    "verify"
+  ]
 }
