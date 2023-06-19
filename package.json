@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/osirislab/superbot.git"
+    "url": "git@github.com:osirislab/superbot-public.git"
   },
   "author": "Andre Allen n132",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/osirislab/superbot/issues"
+    "url": "https://github.com/osirislab/superbot-public/issues"
   },
-  "homepage": "https://github.com/osirislab/superbot#readme",
+  "homepage": "https://github.com/osirislab/superbot-public",
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "discord.js": "^14.7.1",
