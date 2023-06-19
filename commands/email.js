@@ -69,7 +69,7 @@ module.exports = {
 		.setDescription('Sends an email with a secret token')
 		.addStringOption(option =>
 			option.setName('email')
-				.setDescription('Verify your account with your NYU email')
+				.setDescription('Verify your account with your email')
 				.setRequired(true)),
 	async execute(interaction) {
 		const email = interaction.options.getString('email');
